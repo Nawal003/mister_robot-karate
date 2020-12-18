@@ -1,0 +1,393 @@
+body{
+    margin:0;
+    padding: 0;     
+    box-sizing: border-box;
+   
+    /* animation: button 10s forwards; */
+}
+
+header{
+    background-color: rgb(189, 187, 187);
+    width: 100%;
+    height: 12em;
+    position: absolute;
+   
+    
+}
+
+
+.tete{
+    margin-top: -5em;
+    position: relative;
+    width: 20%;
+    height: 12em;
+    border-radius: 1em;
+    background-color: #fff;    
+    transform: translate(200%, 40%);
+    perspective-origin: top;
+    
+       
+
+}
+
+.oeil1 {   
+    position: absolute;
+    width: 3%;
+    height: 2rem;
+    background-color:grey;
+    border-radius: 50%;
+    margin: -3rem 0 0 45%;
+    
+
+    
+    
+    
+   
+    
+
+}
+
+.oeil2 {
+    position: absolute;
+    width: 3%;
+    height: 2rem;
+    background-color:grey;
+    border-radius: 50%;
+    margin: -3rem 0 0 53%; 
+   
+    
+    
+
+}
+.bouche
+{
+    position: absolute;
+    width: 5%;
+    height: 1em;
+    border-radius: 50%;
+    border-width: 10px 10px 0 0;    
+    background-color: grey;
+    margin: 1rem 0 0 48%;
+    animation: bouche 10s infinite;
+    
+
+}
+
+
+nav{
+    background-color: rgb(105, 102, 102);
+    width: 100%;
+    height: 2em;
+    margin-top: 12em;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    ". cou";
+    
+}
+
+.cou{
+    width: 10%;
+    height: 2em;
+    background-color: white;
+    grid-area: cou;
+    margin: 0 0 0 18.5em;
+    
+    
+    
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgb(144, 138, 138);
+    width: 100%;
+    height: 21em;
+    margin-top: 14em;
+    position: absolute;
+    grid-column-gap: .5rem;
+    grid-template-areas: 
+    ". bras1 corps bras2";    
+}
+
+
+
+.corps{
+    border-radius: 1em;
+    position: relative;
+    grid-area: corps;
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    animation: corps 10s infinite;
+
+}
+
+
+
+.bras1{
+    grid-area: bras1;
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 20%;
+    border-radius: 1em;
+    margin-left: 80%;
+    transform-origin: top right;
+    animation: bras1 10s infinite;
+    
+
+}
+
+.bras2{
+    border-radius: 1em;
+    grid-area: bras2;
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 20%;
+    margin-right: 95%;
+    transform-origin: top left;
+    animation: bras2 10s infinite;
+   
+
+}
+button{
+    position:absolute;
+    width: 5%;
+    height: 2em;
+    background-color: rgb(15, 14, 14);
+    margin: 10% 0 0 48%;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;    
+    
+}
+
+footer{
+    display: grid;
+    background-color: grey;
+    width: 100%;
+    height: 23em;
+    position: absolute;
+    margin-top: 34.96em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 1em;
+    grid-template-areas: 
+    "jambe1 jambe2"
+    "pied1 pied2";
+    
+}
+
+.jambe1{
+    border-radius: 1em;
+    grid-area: jambe1;
+    background-color: white;
+    width: 18%;
+    height: 15em;
+    margin-left: 83%;
+    transform-origin: top right;
+    animation: jambe1 10s infinite;
+    
+
+
+}
+
+.jambe2{
+    border-radius: 1em;
+    grid-area: jambe2;
+    background-color: white;
+    width: 18%;
+    height: 15em;
+    margin-right: 83%;
+    animation: jambe2 10s infinite;
+    
+
+
+}
+
+.pied1{
+    border-radius: 1em;
+    grid-area: pied1;
+    background-color: rgb(167, 31, 31);
+    width: 18%;
+    height: 3em;
+    margin-left: 83%;
+    transform-origin: top;
+    animation: pied1 10s infinite;
+   
+    
+
+
+
+}
+
+.pied2{
+    border-radius: 1em;
+    grid-area: pied2;
+    background-color: rgb(167, 31, 31);
+    width: 18%;
+    height: 3em;
+    margin-right: 83%;
+    animation: pied2 10s infinite;
+    
+
+}
+
+
+
+@keyframes bouche {
+    from{
+        border-radius: 10%;
+        height: 4em;
+    }
+    to{
+        border-radius: 50%;
+        width: 3em;
+
+    }
+}
+
+
+@keyframes bras1 {
+    0%{ 
+        height: 21em;
+        transform: rotate(50deg);
+       
+    }   
+    
+    50%{   
+        height: 15em;      
+        transform: rotate(360deg);
+        
+    }
+    100%{
+        height: 21em;
+
+    }
+}
+@keyframes bras2 {
+    from{  
+        transform: rotate(10deg);
+    }   
+    
+    to{
+        
+        transform: rotate(-360deg);
+       
+    }
+} 
+
+@keyframes jambe1 {
+    0%{
+        transform: translateY(-200%);
+        height: 6em;
+        
+        
+        
+    }
+    80%{
+        transform: translateY(20%);
+        height: 20em;
+        
+    }
+    100%{
+        transform: translateY(0%);
+        height: 18em;
+    }
+}
+
+@keyframes pied1 {
+    0%{
+        
+        transform: translateY(-800%)
+    }
+    90%{
+       
+        transform: translateY(50%);
+
+    }
+
+    100%{
+        transform: translateY(30%);
+    }
+}
+
+
+@keyframes jambe2 {
+    0%{
+        transform: translateY(-20%);
+        
+    }
+
+    50%{
+        transform: translateY(20%);
+    }
+100%{
+        transform: translateY(0%);
+        height: 18em;
+
+    }
+}
+
+@keyframes pied2 {
+    0%{
+        transform: translateY(-70%);
+    }
+    50% {
+        transform: translateY(-10%);    }
+    100%{
+        transform: translateY(-5%);
+
+    }
+}
+
+@keyframes corps {
+    0%{
+        transform: translateY(-20%);
+        height: 25em;
+    }
+    50%{
+        transform: translateY(10%);
+    }
+    100%{
+        transform: translateY(0%);    
+        
+
+    }
+}
+
+
+
+
+
+
+
+/* @keyframes button {
+    0%{
+        opacity: 1;
+
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+    opacity: 1;
+
+}
+ */
+
+@keyframes hello{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
